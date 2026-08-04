@@ -9,9 +9,14 @@ function App() {
   const [counter, setounter] = useState(15)
 
   //let counter = 15
-  const addValue = () =>{
+  const addValue = () => {
+    // setounter(prevCounter => prevCounter = 1)
+    // setounter(prevCounter => prevCounter = 1)
+    // setounter(prevCounter => prevCounter = 1)
+    // setounter(prevCounter => prevCounter = 1)
+
     console.log("clicked", counter);
-    
+
     //counter = counter + 1
 
     setounter(counter + 1)
@@ -27,12 +32,12 @@ function App() {
     <>
       <h1>Chai or React</h1>
       <h2>Counter value: {counter}</h2>
-      <button 
-      onClick={addValue}
+      <button
+        onClick={addValue}
       >Add Value{counter}</button>
       <br />
       <button
-      onClick={removeValue}>remove value {counter} </button>
+        onClick={removeValue}>remove value {counter} </button>
       <p>footer: {counter} </p>
     </>
   )
